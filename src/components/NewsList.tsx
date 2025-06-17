@@ -11,6 +11,7 @@ import dayjs from "dayjs";
 import ArticleItem from "./ArticleItem";
 import useInfiniteScroll from "@hooks/useInfiniteScroll";
 import Typography from "./ui/Typography";
+import { loading } from "@assets/images";
 
 const NewsList = () => {
   const [visibleDays, setVisibleDays] = useState(1);
@@ -60,7 +61,11 @@ const NewsList = () => {
         </section>
       ))}
 
-      {status === "loading" && <p className="text-center py-4">Загрузка...</p>}
+      {status === "loading" && (
+        <div className="flex justify-center">
+          <img src={loading} alt="loading" />
+        </div>
+      )}
       <div ref={sentinelRef} className="h-8"></div>
     </div>
   );
