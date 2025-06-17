@@ -1,0 +1,23 @@
+{
+  "include": ["src", "app/store.ts"],
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@ui/*": ["components/ui/*"],
+      "@assets/*": ["assets/*"],
+      "@features/*": ["features/*"],
+      "@utils/*": ["utils/*"],
+      "@app/*": ["app/*"],
+      "@hooks/*": ["hooks/*"]
+    }
+  }
+}
