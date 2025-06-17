@@ -62,7 +62,7 @@ const NewsList = () => {
       ))}
 
       {status === "loading" && (
-        <div className="flex justify-center">
+        <div className="flex justify-center py-5">
           <img src={loading} alt="loading" />
         </div>
       )}
